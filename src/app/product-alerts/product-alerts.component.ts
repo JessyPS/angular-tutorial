@@ -13,9 +13,10 @@ import { Product } from '../products';
 //   @Input() product!: Product;
 //   constructor() {}
 
-//   ngOnInit() {}
+//
 // }
 export class ProductAlertsComponent {
   @Input() product: Product | undefined;
   @Output() notify = new EventEmitter();
+  ngOnInit() {}
 }
